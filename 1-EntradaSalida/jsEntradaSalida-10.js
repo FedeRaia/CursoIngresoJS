@@ -8,4 +8,5 @@ function mostrarAumento()
     var a=parseInt(precio);
     var b=a*25/100;
     document.getElementById("resultado").value=b;
+    
 }
