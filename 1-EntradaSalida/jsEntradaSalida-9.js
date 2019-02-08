@@ -7,7 +7,7 @@ function mostrarAumento()
     var sueldo=document.getElementById("sueldo").value;
     var redondeo=parseInt(sueldo);
 
-    elaumento=redondeo*100/10+redondeo;
+    elaumento=redondeo*10/100+redondeo;
     
     document.getElementById("resultado").value=elaumento;
 }

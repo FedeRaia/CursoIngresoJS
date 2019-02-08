@@ -10,5 +10,6 @@ function SacarResto()
     var a=parseInt(dividendo);
     var b=parseInt(divisor);
     
-    alert(a/b);
+    var c=alert(a%b);
+
 }
