@@ -1,6 +1,6 @@
 function mostrar()
 {
-var a=prompt("Escriba numero 1:");
+var a=prompt("Escriba numero 1.");
 var b=prompt("Escriba numero 2.");
 
 var c=parseInt(a);

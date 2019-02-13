@@ -4,8 +4,8 @@ function mostrar()
     var a=prompt("ingrese medida del ancho");
     var b=prompt("ingrese medida del largo");
 
-    parseInt(a);
-    parseInt(b);
+    var c=parseInt(a);
+    var d=parseInt(b);
 
-    alert((a*2) + (b*2));
+    alert((c*2) + (d*2));
 }
