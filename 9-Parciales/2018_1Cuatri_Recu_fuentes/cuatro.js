@@ -1,31 +1,25 @@
 function mostrar()
 {
-var a=prompt("Escriba numero 1.");
-var b=prompt("Escriba numero 2.");
+    var cant=prompt("Escriba la cantidad de libros");
+    var prec=prompt("Escriba el total del precio de ellos");
+    var tarj=prompt("Es pago con tarjeta?");
 
-var c=parseInt(a);
-var d=parseInt(b);
-var f=parseInt(e);
+    cantidad=parseInt(cant);
+    precio=parseInt(prec);
 
-if(c==d)
-    {
-        alert("El numero "+c+" es igual a "+d);
-
-    }
-if(c>d)
-    {
-        alert(c/d);
-    }
-else
-    {
-       var e=alert(c+d);
-    
-        if(f<50)
+    if(cantidad>2)
         {
-            alert("La suma es "+f+" y es menor a 50");
+            desc10=(precio*0,9);
+            alert("El pago total serà "+desc10);
         }
-
-    }
+    if(desc10>2000)
+        {
+            desc15=(desc10*0,85);
+            alert("El pago total serà "+desc15);
+        }
+    if(tarj=="si")
+        {
+            total=(desc15*1,10);
+            alert("El pago total serà "+total);
+        }
 }
-
-

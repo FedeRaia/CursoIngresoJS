@@ -1,13 +1,14 @@
 function mostrar()
 {
-var a=prompt("Ingrese precio.");
-var b=prompt("Ingrese descuento.");
+    var amigos=prompt("Ingrese cantidad de comenzales.");
+    var prec=document.getElementById("elPrecioFinal").value;
+    
+    am=parseInt(amigos);
+    p=parseInt(prec);
+    
+    cadauno=(p/am);
+    coniva=(((p*21)/100)+p);
+    diez=(((coniva*10)/100)+coniva);
 
-var precio=parseInt(a);
-var descuento=parseInt(b);
-
-var cálculo=(a/100*b);
-var final=(a-cálculo);
-
-document.getElementById("elPrecioFinal").value=final;
+    alert("cada uno debe pagar "+cadauno+ ", el precio total mas iva es "+coniva+", el precio mas el 10% es "+diez);
 }
