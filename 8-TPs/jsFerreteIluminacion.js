@@ -16,7 +16,6 @@ function CalcularPrecio ()
 {
      var cant=document.getElementById("Cantidad").value;
      var marca=document.getElementById("Marca").value;
-     var preciounidad=35;
 
      cantidad=parseInt(cant);
 
@@ -24,8 +23,8 @@ function CalcularPrecio ()
      if(cantidad>=6)
         {
           precio=cantidad*35;
-          precio6=precio-(precio*0.5);
-          document.getElementById("precioDescuento").value=precio6;
+          precio=precio*0.5;
+          document.getElementById("precioDescuento").value=precio;
         }
       
      if(cantidad==5)
@@ -33,33 +32,55 @@ function CalcularPrecio ()
           if(marca=="ArgentinaLuz")
             {
               precio=cantidad*35;
-              precio5=precio-(precio*0.40);
-              document.getElementById("precioDescuento").value=precio5;
+              precio=precio*0.60;
+              document.getElementById("precioDescuento").value=precio;
             }
           else
             {
               precio=cantidad*35;
-              precio5=precio-(precio*0.30);
-              document.getElementById("precioDescuento").value=precio5;
+              precio=precio*0.70;
+              document.getElementById("precioDescuento").value=precio;
             }
         }
      if(cantidad==4)
         {
-          if(marca==("Argentinaluz"||"FelipeLamparas"))
+          if(marca==("ArgentinaLuz" || "FelipeLamparas"))
             {
               precio=cantidad*35;
-              precio4=precio-(precio*0.25);
-              document.getElementById("precioDescuento").value=precio4;
+              precio=precio*0.75;
+              document.getElementById("precioDescuento").value=precio;
             }
           else
             {
               precio=cantidad*35;
-              precio4=precio-(precio*0.20);
-              document.getElementById("precioDescuento").value=precio4;
+              precio=precio*0.80;
+              document.getElementById("precioDescuento").value=precio;
             }
-          }
+        }
      if(cantidad==3)
         {
-
+          if(marca=="ArgentinaLuz")
+            {
+              precio=cantidad*35;
+              precio=precio*0.85;
+              document.getElementById("precioDescuento").value=precio;
+            }
+          if(marca=="FelipeLamparas")
+            {
+              precio=cantidad*35;
+              precio=precio*0.90;
+              document.getElementById("precioDescuento").value=precio;
+            }
+          if(marca!="ArgentinaLuz" && marca!="FelipeLamparas")
+            {
+              precio=cantidad*35;
+              precio=precio*0.95;
+              document.getElementById("precioDescuento").value=precio;
+            }
         }
+     if(precio>120)
+      {
+        ingresos=precio-(precio*1.10);
+        alert("II BB Usted pagó "+ingresos);
+      }
 }
