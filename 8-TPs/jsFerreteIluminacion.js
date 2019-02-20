@@ -16,12 +16,14 @@ function CalcularPrecio ()
 {
      var cantidad=document.getElementById("Cantidad");
      var marca=document.getElementById("Marca");
+     var preciounidad=35;
 
-     cant1=parseInt(cantidad);
-     precio=(cant1*35);
+     cant=parseInt(cantidad);
+
+     precio=(cant*preciounidad);
      desc6=(precio*50/100);
 
-     if(cant1>=6)
+     if(cant>=6)
         {
             document.getElementById("precioDescuento").value=desc6;
         }
