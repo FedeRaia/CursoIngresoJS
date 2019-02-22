@@ -3,9 +3,23 @@ function mostrar()
 
 var clave = prompt("ingrese el número clave.");
 
-    while (clave!="123")
+var intentos=0;
+
+    if (clave!="utn750")
         {
-            prompt("Clave incorrecta, ingrese nuevamente", "Aqui");
+            while (intentos<2)
+                {
+                    prompt("Clave incorrecta, ingrese nuevamente.", "Aqui.");
+                    intentos=intentos+1;
+                }
+        }
+    if (intentos==2)
+        {
+            alert("Larguese de aqui intruso!!!");
+        }
+    if (clave=="utn750")
+        {
+            alert("Clave correcta.");
         }
 
 
