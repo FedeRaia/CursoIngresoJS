@@ -6,7 +6,7 @@ function FahrenheitCentigrados ()
 {
     var fahr=document.getElementById("Temperatura").value;
     var f=parseInt(fahr);
-    aCent=((f-32)/1,8);
+    aCent=((f-32)/1.8);
     alert(fahr+" grados Fahreheit son "+aCent+" grados centigrados.");
 }
 
@@ -14,6 +14,6 @@ function CentigradosFahrenheit ()
 {
     var cent=document.getElementById("Temperatura").value;
     var c=parseInt(cent);
-    aFahr=((c+32)*1,8);
+    aFahr=((c+32)*1.8);
     alert(cent+" grados Centigrados son "+aFahr+" grados farenhet");
 }
